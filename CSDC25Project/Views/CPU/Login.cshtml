@@ -1,0 +1,127 @@
+﻿
+@model CSDC25Project.Models.LoginCredentials
+
+
+@{
+    ViewBag.Title = "Login";
+    Layout = null;
+}
+
+<link href="~/LoginForm/style.css" rel="stylesheet" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/64d58efce2.js"
+            crossorigin="anonymous"></script>
+    <link href="~/LoginForm/style.css" rel="stylesheet" />
+    <title>Sign in & Sign up Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="forms-container">
+                <div class="col-md-4">
+
+                </div>
+                <div class="col-md-4">
+                    <h1 class="title">CPU</h1>
+                </div>
+            </div>
+        </div>
+        <div class="forms-container">
+       
+            <div class="signin-signup">
+                <form action="#" class="sign-in-form">
+                    <h1 class="title" style="margin-bottom:20px!important">Attendance Monitoring </h1>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                       @Html.TextBoxFor(m=> m.User_name, new {@class= "form-control", @PlaceHolder="Enter Username" })
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        @Html.TextBoxFor(m => m.User_Password, new { @class = "form-control", @type="Password", @PlaceHolder="Enter Password"})
+                    </div>
+                    <input type="submit" value="Login" class="btn solid" />
+                    <div> <input type="checkbox" name="check_remember_pass" id="check_remember_pass"/><label style="font-size:small">Remember Password</label> </div>
+                    <p class="social-text">Or Sign in with social platforms</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </form>
+                <form action="#" class="sign-up-form">
+                    <h2 class="title">Sign up</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username" />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email" />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" />
+                    </div>
+                    <input type="submit" class="btn" value="Sign up" />
+                    <p class="social-text">Or Sign up with social platforms</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h4>VISION</h4>
+                    <p style="text-align:justify !important; font-size:14px !important">
+                        CPU Vision Lmao....sadsahdiusahdoisahdiohasiodhsiodhioashdiosahiodshadkz,cop[zxkcopzxkcjzxopcjopsjdfpojspofjopsjfopsjopfjdspofjopdsjfopdsjpofsdfsdfsdfsdfds]
+                    </p>
+                </div>
+                <div class="content">
+                    <h4>MISSION</h4>
+                    <p style="text-align:justify !important; font-size:14px !important">
+                        CPU MISSION Lmao....dsfsdsadsahdiusahdoisahdiohasiodhsiodhioashdiosahiodshadkz,cop[zxkcopzxkcjzxopcjopsjdfpojspofjopsjfopsjopfjdspofjopdsjfopdsjpofsdfsdfsdfsdfds]
+                    </p>
+                </div>
+                <img src="~/LoginForm/register.svg" class="image" alt="" />
+            </div>
+        </div>
+    </div>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/LoginForm/app.js"></script>
+  
+</body>
+
+</html>
+
+
+
+
+
+
